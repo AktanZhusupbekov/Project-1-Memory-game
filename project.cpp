@@ -51,11 +51,11 @@ void playMemoryGame() {
       for (int i = 0; i < lenght; i++) {
         cout << questionArr[i] << " ";
       }
-      cout << "\nEnter the index to show: ";
+      cout << "\nEnter the index : ";
       cin >> first;
       cout << "The card at index " << first << " is: " << arr[first];
 
-      cout << "\nEnter the second index to show: ";
+      cout << "\nEnter the second index : ";
       cin >> second;
       cout << "The card at the index " << second << " is: " << arr[second] << endl;
 
@@ -74,7 +74,7 @@ void playMemoryGame() {
         questionArr[first] = to_string(arr[first]);
         questionArr[second] = to_string(arr[second]);
       } else {
-        cout << "\nThe cards do not match! Try again!\n" << endl;
+        cout << "\nThe cards do not match Try again!\n" << endl;
       }
 
       for (int i = 0; i < lenght; i++) {
@@ -84,7 +84,7 @@ void playMemoryGame() {
       }
 
       if (cheking == lenght) {
-        cout << "Congratulations! You won! Here's the amount of your attempts: " << attempts << "\n";
+        cout << " You won! Here's the amount of your attempts: " << attempts << "\n";
         isWon = true;
       } else {
         tapEnter();
